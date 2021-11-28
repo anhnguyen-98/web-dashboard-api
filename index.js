@@ -36,6 +36,6 @@ app.get('/sensor', (req, res) => {
 });
 
 app.listen(
-    PORT,
+    process.env.PORT || PORT,
     () => console.log(`It is alive on port ${PORT}`)
 )
